@@ -106,6 +106,20 @@ header p {
   font-size: 1.1rem;
   line-height: 1.7;
 }
+#contact h2 {
+  color: #fff7cd; /* Farbe für h2 */
+}
+
+#contact .btn {
+  background-color: #fff7cd; /* Hintergrundfarbe für den Button */
+  color: #000; /* Textfarbe für den Button */
+  border: none; /* Entferne den Standardrahmen, falls gewünscht */
+}
+
+#contact .btn:hover {
+  background-color: #ffe7a8; /* Optional: Farbe für den Hover-Zustand */
+}
+
 .card-body blockquote p {
   font-style: italic;
   color: rgba(255, 255, 255, 0.7); /* Leicht abgedunkelter Text */
