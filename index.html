@@ -49,7 +49,6 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   </head>
-
   <body>
     <!-- header, logo, nav, mobiles design -->
     <header>
@@ -593,7 +592,7 @@
           <p>Wir freuen uns auf Ihre Nachricht!</p>
         </header>
 
-        <form>
+        <form onsubmit="sendMail(event)">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <div class="input-group">
@@ -637,8 +636,8 @@
               ></textarea>
             </div>
           </div>
-          <button type="submit" class="btn" style="background-color: #fff3cd">
-            Absenden <i class="bi bi-send"></i>
+          <button type="submit" class="btn btn-primary">
+            <i class="bi bi-send-fill me-1"></i> Senden
           </button>
         </form>
       </div>
@@ -667,6 +666,34 @@
         </div>
       </div>
     </section>
+    <!-- Cookie Banner -->
+    <div
+      id="cookie-banner"
+      class="cookie-banner fixed-bottom bg-dark text-light p-3"
+      style="display: none"
+    >
+      <div class="container">
+        <p class="mb-2">
+          Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu
+          verbessern. Mehr erfahren in unserer
+          <a
+            href="datenschutzerklaerung.html"
+            class="text-light"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Datenschutzerklärung</a
+          >.
+        </p>
+        <div class="d-grid gap-2" style="max-width: 200px; margin: auto">
+          <button id="accept-cookies" class="btn btn-success btn-sm">
+            Akzeptieren
+          </button>
+          <button id="decline-cookies" class="btn btn-danger btn-sm">
+            Ablehnen
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- footer -->
     <footer class="bg-dark text-light pt-4 pb-2">
       <div class="container">
@@ -702,13 +729,14 @@
           <div class="col-md-4 text-center">
             <h5>Folge uns auf Social Media</h5>
             <div class="social-icons">
-              <a href="#" class="text-light me-2"
+              <a
+                href="https://www.facebook.com/knezholz"
+                class="text-light me-2"
                 ><i class="bi bi-facebook" style="font-size: 2.5rem"></i
               ></a>
-              <a href="#" class="text-light me-2"
-                ><i class="bi bi-twitter" style="font-size: 2.5rem"></i
-              ></a>
-              <a href="#" class="text-light me-2"
+              <a
+                href="https://www.instagram.com/knezholz_gmbh/"
+                class="text-light me-2"
                 ><i class="bi bi-instagram" style="font-size: 2.5rem"></i
               ></a>
             </div>
@@ -729,6 +757,14 @@
             >
           </div>
         </div>
+      </div>
+      <div class="text-center mt-3">
+        <p class="mb-0">
+          Copyright © 2024 KnezHolz GmbH - Alle Rechte vorbehalten.
+        </p>
+        <p class="mb-0">
+          made by <a href="https://www.dimit.cc/" class="text-light">dimit</a>
+        </p>
       </div>
     </footer>
   </body>
