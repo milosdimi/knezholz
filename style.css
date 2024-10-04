@@ -1,0 +1,181 @@
+body::before {
+  content: "";
+  background-image: url(../../img/startwood.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+#banner {
+  position: relative;
+  overflow: hidden;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#banner .inner {
+  position: relative;
+  z-index: 2; /* Text bleibt über dem Video */
+}
+
+#banner h1,
+#banner h2,
+#banner p {
+  color: #ffd700; /* Goldene Farbe */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Schwarzer Schatten */
+}
+
+#banner h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+#banner h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#banner p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Video hinter dem Text */
+  opacity: 0.9; /* Du kannst die Deckkraft je nach gewünschter Transparenz anpassen */
+}
+header h2,
+header p {
+  color: #fff7cd; /* Goldene Farbe */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Schwarzer Schatten */
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.7); /* Dunkler transparenter Hintergrund */
+  color: white; /* Textfarbe weiß für bessere Lesbarkeit */
+  border: none; /* Entfernt den Kartenrand */
+}
+
+.card h5,
+.card p {
+  color: #fff7cd; /* Goldene Farbe für Titel und Text */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Optionaler Schatten für Text */
+}
+#cta {
+  background-color: #ce1b28; /* Hintergrundfarbe */
+  color: rgba(255, 255, 255, 0.75); /* Textfarbe mit Transparenz */
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(../../img/fern-1250903_1920.jpg); /* Bild und Farbüberlagerung */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  padding: 50px 0; /* Abstand nach oben und unten */
+}
+
+#cta h2 {
+  color: #fff7cd; /* Goldene Farbe für die Überschrift */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Schatten für die Überschrift */
+}
+
+#cta p {
+  color: rgba(255, 255, 255, 0.85); /* Textfarbe etwas heller */
+  max-width: 800px; /* Maximalbreite des Textes */
+  margin: 0 auto; /* Zentriert den Text */
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.card-body blockquote p {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7); /* Leicht abgedunkelter Text */
+}
+
+.card-title {
+  color: #ffd700; /* Goldene Farbe für die Namen */
+}
+
+.card-text {
+  color: rgba(0, 0, 0, 0.6); /* Leicht abgedunkelter Text für Position */
+}
+.card-img-top:hover {
+  transform: scale(1.05); /* Bild bei Hover vergrößern */
+}
+#carouselExample {
+  max-width: 100%; /* Setze die maximale Breite für das Carousel */
+  margin: auto; /* Zentriere das Carousel */
+}
+
+#carouselExample .carousel-item {
+  height: 400px; /* Setze eine feste Höhe für die Carousel-Items */
+}
+
+#carouselExample img {
+  height: 100%; /* Bildhöhe auf 100% des Carousel-Items setzen */
+  object-fit: cover; /* Stelle sicher, dass die Bilder gleichmäßig skaliert werden */
+}
+.video-container {
+  margin: 0 auto; /* Zentriert das Video */
+}
+.input-group-text {
+  background-color: #fff3cd; /* Hintergrundfarbe der Icons */
+  color: black; /* Textfarbe der Icons */
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary i {
+  margin-right: 5px; /* Abstand zwischen Icon und Text */
+}
+.embed-responsive {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+footer a {
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffcc00; /* Ändere die Hover-Farbe nach Belieben */
+}
+
+.social-icons i {
+  font-size: 2.5rem !important; /* Größere Icons */
+}
+
+.social-icons a {
+  font-size: 2.5rem !important; /* Sicherstellen, dass die Icons groß sind */
+}
