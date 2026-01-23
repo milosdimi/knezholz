@@ -1,772 +1,680 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Beschreibung für SEO -->
-    <meta
-      name="description"
-      content="KnezHolz – Ihr Partner für Altholzhandel und nachhaltige Holzprodukte."
-    />
-    <!-- Open Graph Meta Tags für Social Media -->
-    <meta property="og:title" content="KnezHolz | Altholzhandel" />
-    <meta
-      property="og:description"
-      content="Ihr Partner für nachhaltige Holzprodukte."
-    />
-    <meta property="og:image" content="/img/knezlogo.jpg" />
-    <meta property="og:url" content="https://test.dimit.cc" />
-    <meta property="og:type" content="website" />
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/img/knezlogoicon.jpg" />
-    <title>KnezHolz | Home</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css" />
+<html lang="de">
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
-    />
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  </head>
-  <body>
-    <!-- header, logo, nav, mobiles design -->
-    <header>
-      <nav
-        class="navbar navbar-expand-lg"
-        style="background-color: rgba(0, 0, 0, 0.7)"
-      >
-        <div class="container-fluid">
-          <!-- Logo auf der linken Seite -->
-          <a class="navbar-brand" href="./index.html">
-            <img
-              src="/img/knezlogo1.png"
-              alt="KnezHolz Logo"
-              width="100"
-              height="50"
-              class="d-inline-block align-text-top"
-            />
-          </a>
+<head>
+  <!-- Basics -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="language" content="de" />
+  <meta name="robots" content="index, follow" />
 
-          <!-- Button für mobile Ansicht -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <!-- Title & Description (SEO) -->
+  <title>KnezHolz GmbH – Altholzhandel & nachhaltige Holzprodukte | Ebbs (Tirol)</title>
+  <meta name="description"
+    content="KnezHolz GmbH in Ebbs (Tirol): Altholzhandel, Kantholz, Schnittholz, 3-Schichtplatten & individuelle Holzbearbeitung. Nachhaltig. Charaktervoll. Qualität statt Quantität." />
 
-          <!-- Navigation Links rechts -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#cta">Über uns</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#leistungen">Leistungen</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#contact">Kontakt</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- Willkommen & video -->
-    <section id="banner">
-      <div class="inner text-center">
-        <h2>Willkommen</h2>
-        <h1>KnezHolz</h1>
-        <p>
-          Holz – Lebendig, natürlich und nachhaltig. Für eine Welt, die
-          mitwächst
-        </p>
-      </div>
-      <video autoplay loop muted playsinline id="background-video">
-        <source src="img/Video-gesamt-klein.mp4" type="video/mp4" />
-        Dein Browser unterstützt dieses Videoformat nicht.
-      </video>
-    </section>
-    <!-- Altholz Sortiment -->
-    <section class="wrapper py-5">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.knezholz.com/" />
+
+  <!-- Open Graph (Facebook, etc.) -->
+  <meta property="og:locale" content="de_AT" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KnezHolz" />
+  <meta property="og:title" content="KnezHolz GmbH – Altholzhandel & nachhaltige Holzprodukte" />
+  <meta property="og:description"
+    content="Altholzhandel & Holzbearbeitung nach Kundenwunsch. Nachhaltige Holzprodukte aus Ebbs (Tirol)." />
+  <meta property="og:url" content="https://www.knezholz.com/" />
+  <meta property="og:image" content="https://www.knezholz.com/assets/img/logos/knezlogo.jpg" />
+  <meta property="og:image:alt" content="KnezHolz Logo" />
+
+  <!-- Twitter Card (auch wenn du's nicht nutzt: schadet nicht) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KnezHolz GmbH – Altholzhandel & nachhaltige Holzprodukte" />
+  <meta name="twitter:description"
+    content="Altholzhandel & Holzbearbeitung nach Kundenwunsch. Nachhaltige Holzprodukte aus Ebbs (Tirol)." />
+  <meta name="twitter:image" content="https://www.knezholz.com/assets/img/logos/knezlogo.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="KnezHolz" />
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+  <meta name="theme-color" content="#0b0b0b" />
+
+  <!-- Performance: früh connecten -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Dein CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Schema.org (JSON-LD): LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "KnezHolz GmbH",
+    "url": "https://www.knezholz.com/",
+    "logo": "https://www.knezholz.com/assets/img/logos/knezlogo.jpg",
+    "image": "https://www.knezholz.com/assets/img/logos/knezlogo.jpg",
+    "telephone": "+436642178399",
+    "email": "office@knezholz.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kleinfeld 12a",
+      "postalCode": "6334",
+      "addressLocality": "Ebbs",
+      "addressCountry": "AT"
+    },
+    "sameAs": [
+      "https://www.facebook.com/knezholz",
+      "https://www.instagram.com/knezholz_gmbh/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Header / Navigation -->
+  <div data-include="partials/header.html"></div>
+
+  <!-- Hero / Video Banner -->
+  <section id="banner" aria-label="KnezHolz Startbereich">
+    <div class="inner">
       <div class="container">
-        <header class="text-center mb-5">
-          <h2>Unser Altholz Sortiment</h2>
-          <p>
-            Entdecken Sie unser vielfältiges Altholz-Sortiment – jedes Stück
-            erzählt seine eigene Geschichte. Nachhaltig, charaktervoll und ideal
-            für einzigartige Projekte.
+        <div class="mx-auto" style="max-width: 900px;">
+          <p class="text-uppercase mb-2" style="letter-spacing: .12em; opacity: .95;">
+            Ebbs, Tirol · Altholz & Holzprodukte
           </p>
-        </header>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <a href="kantholz.html" class="text-decoration-none">
-              <div class="card h-100">
-                <img
-                  src="img/Knezholz-005.jpg"
-                  class="card-img-top"
-                  alt="Kantholz"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Kantholz/Balken/Sparren</h5>
-                  <p class="card-text">
-                    Altholz – jedes Stück Holz erzählt seine eigene Geschichte.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
+          <h2 class="mb-2">Willkommen bei</h2>
+          <h1 class="mb-3">KnezHolz</h1>
 
-          <div class="col">
-            <a href="schnittholz.html" class="text-decoration-none">
-              <div class="card h-100">
-                <img
-                  src="img/Knezholz-131.jpg"
-                  class="card-img-top"
-                  alt="Schnittholz"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Schnittholz</h5>
-                  <p class="card-text">
-                    Nichts kann einen Raum mehr mit Wärme erfüllen, als Liebe
-                    und Holz/Altholz
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="platten.html" class="text-decoration-none">
-              <div class="card h-100">
-                <img
-                  src="img/Knezholz-042.jpg"
-                  class="card-img-top"
-                  alt="Platten"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">3-Schicht Platten</h5>
-                  <p class="card-text">
-                    Ein schonender Umgang mit der Ressource Holz/Altholz leistet
-                    einen enormen Beitrag zum Klimaschutz, ganz nach dem Motto
-                    -Reclaimed Wood for the future
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="original_bretter.html" class="text-decoration-none">
-              <div class="card h-100">
-                <img
-                  src="img/Knezholz-059-e1571847851526.jpg"
-                  class="card-img-top"
-                  alt="Platten"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">original handgehackte Bretter</h5>
-                  <p class="card-text">
-                    Zahlreiche Axthiebe sorgten damals für das ins Form bringen,
-                    heute schaffen sie einen unbezahlbaren Wohlfühlfakto
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="sonnenverbrannte.html" class="text-decoration-none">
-              <div class="card h-100">
-                <img
-                  src="img/Knezholz-165.jpg"
-                  class="card-img-top"
-                  alt="Platten"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Verschlagbretter sonnenverbrannt</h5>
-                  <p class="card-text">
-                    Ohne einen einzigen Baum zu fällen, leisten diese
-                    wiederaufbereiteten qualitativ hochwertigen Bretter durch
-                    ihre zweite Verwendung ihren Beitrag zum Umweltschutz und
-                    Nachhaltigkeit
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="blockwandbohle.html" class="text-decoration-none">
-              <div class="card h-100">
-                <img src="img/videobg.jpg" class="card-img-top" alt="Platten" />
-                <div class="card-body">
-                  <h5 class="card-title">Blockwandbohle</h5>
-                  <p class="card-text">
-                    Die Verwendung von Altholz trägt zum Schutz der Wälder bei
-                    und vermindert den C02 Ausstoß auch wird der Energieaufwand
-                    minimal gehalten somit ökologisch sehr sinn- und wertvoll
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Weitere Karten -->
-        </div>
-      </div>
-    </section>
-    <!-- carousel slide -->
-    <section class="wrapper py-5">
-      <div class="container">
-        <header class="text-center mb-5">
-          <h2>Tischplatte & Stühle</h2>
-          <p>Unsere exklusiven Designs</p>
-        </header>
-
-        <div
-          id="carouselExample"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./img/tischplatte1.jpg"
-                class="d-block w-100"
-                alt="Tischplatte 1"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./img/tischplatte2.jpg"
-                class="d-block w-100"
-                alt="Tischplatte 2"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./img/tischplatte3.jpg"
-                class="d-block w-100"
-                alt="Tischplatte 3"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./img/tischplatte4.jpg"
-                class="d-block w-100"
-                alt="Tischplatte 4"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./img/tischplatte5.jpg"
-                class="d-block w-100"
-                alt="Tischplatte 5"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./img/tischplatte6.jpg"
-                class="d-block w-100"
-                alt="Tischplatte 6"
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Vorherige</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Nächste</span>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- video tischplatte -->
-    <section class="wrapper py-5">
-      <div class="container">
-        <header class="text-center mb-5">
-          <h2>Unser Video</h2>
-          <p>Ein Blick auf unsere Produkte in Aktion</p>
-        </header>
-
-        <div class="video-container text-center">
-          <video controls width="100%">
-            <source src="./img/Tischplatte_klein.mp4" type="video/mp4" />
-            Ihr Browser unterstützt das Video-Tag.
-          </video>
-        </div>
-      </div>
-    </section>
-    <!-- leistungen -->
-    <section id="leistungen" class="wrapper py-5">
-      <div class="container">
-        <header class="text-center mb-5">
-          <h2>Altholz/Holz Bearbeitung</h2>
-          <p>Bearbeitung auf Kundenwunsch</p>
-        </header>
-
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="./img/Knezholz-065.jpg"
-                class="card-img-top"
-                alt="Leistung 1"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Entnageln</h5>
-                <p class="card-text">
-                  Entnageln und mehr – Wir beseitigen störende Nägel und sorgen
-                  dafür, dass unsere Produkte frei von Hindernissen sind, um
-                  Ihnen das bestmögliche Recycling-Erlebnis zu bieten
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="./img/Knezholz-049.jpg"
-                class="card-img-top"
-                alt="Leistung 2"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Bürsten</h5>
-                <p class="card-text">
-                  Perfektes Finish - Unsere Bürstenservices bringen
-                  Holzoberflächen zum Strahlen, indem wir sie von Unreinheiten
-                  befreien und für ein makelloses Erscheinungsbild sorgen
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="./img/Knezholz-131.jpg"
-                class="card-img-top"
-                alt="Leistung 3"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Formschnitt</h5>
-                <p class="card-text">
-                  Präziser Formschnitt - Mit unserem Formschnitt-Service
-                  verleihen wir Ihrem Holz die gewünschte Form und sorgen für
-                  ein makelloses Erscheinungsbild, das Ihren Anforderungen
-                  entspricht.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="./img/FTP_4642-scaled-e1585582861156.jpg"
-                class="card-img-top"
-                alt="Leistung 4"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Besäumen</h5>
-                <p class="card-text">
-                  Präzise Kanten - Unsere Besäumdienste sorgen dafür, dass
-                  Holzstücke die gewünschte Größe und Form erhalten, indem wir
-                  überstehende Kanten entfernen und ein sauberes,
-                  professionelles Finish bieten.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="./img/Hobeln.webp"
-                class="card-img-top"
-                alt="Leistung 5"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Hobeln</h5>
-                <p class="card-text">
-                  Glatte Oberflächen - Unser Hobelservice verwandelt grobe
-                  Holzoberflächen in gleichmäßig glatte Flächen, sodass Ihre
-                  Holzprodukte sowohl ästhetisch ansprechend als auch funktional
-                  sind.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="./img/Trocknen.webp"
-                class="card-img-top"
-                alt="Leistung 6"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Trocknen</h5>
-                <p class="card-text">
-                  Optimale Feuchtigkeit - Unser Trocknungsprozess sorgt dafür,
-                  dass das Holz die ideale Feuchtigkeit erreicht, um
-                  Verformungen und Rissbildung zu vermeiden. Dies gewährleistet
-                  die Langlebigkeit und Stabilität Ihrer Holzprodukte.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About -->
-    <section id="cta" class="wrapper py-5">
-      <div class="container">
-        <div class="inner text-center">
-          <h2 class="mb-4">Über KnezHolz GmbH / Altholz</h2>
-          <p>
-            <strong>Unsere Geschichte:</strong>
-            Wir gehören zu den führenden Altholzlieferanten in Österreich und
-            der EU. Unser Hauptaugenmerk liegt auf einem verantwortungsbewussten
-            Umgang mit der wertvollen Ressource Holz und Altholz. Diese
-            Philosophie wird sowohl von unseren Kunden als auch von unseren
-            Lieferanten geschätzt, da wir auf langfristige und faire
-            Partnerschaften setzen. Bei KnezHolz GmbH stehen Nachhaltigkeit und
-            Klimaschutz an oberster Stelle. Wir setzen auf Qualität anstelle von
-            Quantität – ALTHOLZ for the Future!
+          <p class="mb-4">
+            Holz – lebendig, natürlich und nachhaltig. Für eine Welt, die mitwächst.
           </p>
-        </div>
-      </div>
-    </section>
-    <!-- Team -->
-    <section class="wrapper py-5">
-      <div class="container">
-        <header class="text-center mb-5">
-          <h2>Unser Starkes Team</h2>
-          <p>
-            Lernen Sie das Team hinter KnezHolz kennen – Experten mit
-            Leidenschaft für Holz und Nachhaltigkeit.
-          </p>
-        </header>
-
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100 text-center">
-              <img
-                src="./img/Knezholz_Mio.jpg"
-                class="card-img-top rounded-circle mx-auto mt-3"
-                alt="Team Member 1"
-                style="
-                  width: 150px;
-                  height: 150px;
-                  object-fit: cover;
-                  border: 2px solid #fff; /* Weißer Rand */
-                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten */
-                  transition: transform 0.2s; /* Sanfte Übergänge */
-                "
-              />
-              <div class="card-body">
-                <blockquote class="blockquote mb-4">
-                  <p>
-                    Als ausgebildeter Techniker mit langjähriger Erfahrung in
-                    der Baubranche ist er der erste Ansprechpartner für
-                    Baustoffe und trägt die Verantwortung für den operativen
-                    Bereich
-                  </p>
-                </blockquote>
-                <h5 class="card-title">Miodrag Knezevic</h5>
-                <p class="card-text">CEO - KnezHolz</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 text-center">
-              <img
-                src="./img/Knezholz_Silvija.jpg"
-                class="card-img-top rounded-circle mx-auto mt-3"
-                alt="Team Member 2"
-                style="
-                  width: 150px;
-                  height: 150px;
-                  object-fit: cover;
-                  border: 2px solid #fff; /* Weißer Rand */
-                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten */
-                  transition: transform 0.2s; /* Sanfte Übergänge */
-                "
-              />
-              <div class="card-body">
-                <blockquote class="blockquote mb-4">
-                  <p>
-                    Die Dame im Hintergrund bringt umfassendes kaufmännisches
-                    Know-how mit und ist für den strategischen Bereich,
-                    einschließlich Management und Planung, zuständig
-                  </p>
-                </blockquote>
-                <h5 class="card-title">Silvija Knezevic, MA</h5>
-                <p class="card-text">Holzexperte - KnezHolz</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 text-center">
-              <img
-                src="./img/Knezholz-081.jpg"
-                class="card-img-top rounded-circle mx-auto mt-3"
-                alt="Team Member 3"
-                style="
-                  width: 150px;
-                  height: 150px;
-                  object-fit: cover;
-                  border: 2px solid #fff; /* Weißer Rand */
-                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten */
-                  transition: transform 0.2s; /* Sanfte Übergänge */
-                "
-              />
-
-              <div class="card-body">
-                <blockquote class="blockquote mb-4">
-                  <p>
-                    Unsere Sicherheitsbeauftragte mit einem ausgezeichneten
-                    Gespür
-                  </p>
-                </blockquote>
-                <h5 class="card-title">Emma</h5>
-                <p class="card-text">Security - KnezHolz</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Kontakt -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Kontakt</h2>
-        <form onsubmit="sendMail(event)">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="bi bi-person"></i>
-              </span>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                placeholder="Dein Name"
-                required
-              />
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-Mail</label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="bi bi-envelope"></i>
-              </span>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="name@example.com"
-                required
-              />
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Nachricht</label>
-            <div class="input-group">
-              <span class="input-group-text">
-                <i class="bi bi-chat-dots"></i>
-              </span>
-              <textarea
-                class="form-control"
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Deine Nachricht"
-                required
-              ></textarea>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            <i class="bi bi-send-fill me-1"></i> Senden
-          </button>
-        </form>
-      </div>
-    </section>
-    <!-- google maps -->
-    <section class="wrapper py-5">
-      <div class="container">
-        <header class="text-center mb-4">
-          <h2>Besuche uns</h2>
-          <p>Finde unseren Standort auf der Karte</p>
-        </header>
-        <div class="row">
-          <div class="col">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5350.994208992127!2d12.20823382646409!3d47.620802302479326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477639a4297235df%3A0x637445b6f6650b19!2sKleinfeld%2012%2C%206341%20Ebbs!5e1!3m2!1sde!2sat!4v1728005401903!5m2!1sde!2sat"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Cookie Banner -->
-    <div
-      id="cookie-banner"
-      class="cookie-banner fixed-bottom bg-dark text-light p-3"
-      style="display: none"
-    >
-      <div class="container">
-        <p class="mb-2">
-          Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu
-          verbessern. Mehr erfahren in unserer
-          <a
-            href="datenschutzerklaerung.html"
-            class="text-light"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Datenschutzerklärung</a
-          >.
-        </p>
-        <div class="d-grid gap-2" style="max-width: 200px; margin: auto">
-          <button id="accept-cookies" class="btn btn-success btn-sm">
-            Akzeptieren
-          </button>
-          <button id="decline-cookies" class="btn btn-danger btn-sm">
-            Ablehnen
-          </button>
         </div>
       </div>
     </div>
-    <!-- footer -->
-    <footer class="bg-dark text-light pt-4 pb-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <img
-              src="./img/knezlogo.jpg"
-              alt="KnezHolz Logo"
-              class="mb-2"
-              style="width: 150px"
-            />
-            <p>
-              <strong><i class="bi bi-telephone-fill"></i> Telefon:</strong>
-              <a href="tel:+436642178399" class="text-light">+43 6642178399</a>
-            </p>
-            <p>
-              <strong><i class="bi bi-envelope-fill"></i> E-Mail:</strong>
-              <a href="mailto:office@knezholz.com" class="text-light"
-                >office@knezholz.com</a
-              >
-            </p>
-            <p>
-              <strong><i class="bi bi-geo-alt-fill"></i> Adresse:</strong>
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Kleinfeld+12a,+6334+Ebbs"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-light"
-                >Kleinfeld 12a, 6334 Ebbs</a
-              >
-            </p>
+
+    <video autoplay loop muted playsinline id="background-video" preload="metadata">
+      <source src="assets/img/video/Video-gesamt-klein.mp4" type="video/mp4" />
+      Dein Browser unterstützt dieses Videoformat nicht.
+    </video>
+  </section>
+
+  <!-- Altholz Sortiment -->
+  <section class="wrapper py-5" id="sortiment">
+    <div class="container">
+      <header class="text-center mb-5">
+        <h2 class="mb-3">Unser Altholz Sortiment</h2>
+        <p class="mb-0">
+          Entdecken Sie unser vielfältiges Altholz-Sortiment – jedes Stück erzählt seine eigene Geschichte.
+          Nachhaltig, charaktervoll und ideal für einzigartige Projekte.
+        </p>
+      </header>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+        <!-- Kantholz -->
+        <div class="col">
+          <a href="pages/kantholz.html" class="card card-link h-100 text-decoration-none">
+            <div class="card-media">
+              <img src="assets/img/products/balken/fichte-tanne-kiefer/balken-kantholz.jpg"
+                alt="Kantholz Balken Sparren" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3 class="h5 card-title">Kantholz / Balken / Sparren</h3>
+              <p class="card-text mb-0">Altholz – jedes Stück Holz erzählt seine eigene Geschichte.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Schnittholz -->
+        <div class="col">
+          <a href="pages/schnittholz.html" class="card card-link h-100 text-decoration-none">
+            <div class="card-media">
+              <img src="assets/img/products/schnittholz/schnittholz1.jpg" alt="Schnittholz" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3 class="h5 card-title">Schnittholz</h3>
+              <p class="card-text mb-0">Liebe und Holz – nichts bringt mehr Wärme in einen Raum.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- 3-Schicht Platten -->
+        <div class="col">
+          <a href="pages/platten.html" class="card card-link h-100 text-decoration-none">
+            <div class="card-media">
+              <img src="assets/img/products/3-Schicht/altholz-3-schicht-platten.jpg" alt="3-Schicht Platten"
+                loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3 class="h5 card-title">3-Schicht Platten</h3>
+              <p class="card-text mb-0">Reclaimed Wood – für eine nachhaltige Zukunft.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Original Bretter -->
+        <div class="col">
+          <a href="pages/original-bretter.html" class="card card-link h-100 text-decoration-none">
+            <div class="card-media">
+              <img src="assets/img/products/handgehackte/fichte/handgehackte-bretter-fichte.jpg"
+                alt="Handgehackte Bretter" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3 class="h5 card-title">Handgehackte Bretter</h3>
+              <p class="card-text mb-0">Jeder Axthieb erzählt Geschichte.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sonnenverbrannt -->
+        <div class="col">
+          <a href="pages/sonnenverbrannte.html" class="card card-link h-100 text-decoration-none">
+            <div class="card-media">
+              <img src="assets/img/products/sonnenverbrannte/sonnenverbrannte.jpg" alt="Sonnenverbrannte Bretter"
+                loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3 class="h5 card-title">Sonnenverbrannte Bretter</h3>
+              <p class="card-text mb-0">Ökologisch sinnvoll & wiederverwendet.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Blockwandbohle -->
+        <div class="col">
+          <a href="pages/blockwandbohle.html" class="card card-link h-100 text-decoration-none">
+            <div class="card-media">
+              <img src="assets/img/products/blockwandbohle/eiche/blockwandbohle-eiche.jpg" alt="Blockwandbohle"
+                loading="lazy" />
+            </div>
+            <div class="card-body">
+              <h3 class="h5 card-title">Blockwandbohle</h3>
+              <p class="card-text mb-0">Weniger CO₂, mehr Nachhaltigkeit.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tischplatte & Stühle (Carousel) -->
+  <section class="wrapper py-5" id="designs">
+    <div class="container">
+      <header class="text-center mb-5">
+        <h2 class="mb-2">Tischplatte &amp; Stühle</h2>
+        <p class="mb-0">Unsere exklusiven Designs</p>
+      </header>
+
+      <div id="carouselDesigns" class="carousel slide rounded-4 overflow-hidden border border-white border-opacity-10"
+        data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators mb-0">
+          <button type="button" data-bs-target="#carouselDesigns" data-bs-slide-to="0" class="active"
+            aria-label="1"></button>
+          <button type="button" data-bs-target="#carouselDesigns" data-bs-slide-to="1" aria-label="2"></button>
+          <button type="button" data-bs-target="#carouselDesigns" data-bs-slide-to="2" aria-label="3"></button>
+          <button type="button" data-bs-target="#carouselDesigns" data-bs-slide-to="3" aria-label="4"></button>
+          <button type="button" data-bs-target="#carouselDesigns" data-bs-slide-to="4" aria-label="5"></button>
+          <button type="button" data-bs-target="#carouselDesigns" data-bs-slide-to="5" aria-label="6"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/gallery/tischplatte1.jpg" class="d-block w-100 carousel-img"
+              alt="Tischplatte & Stühle – Design 1" loading="lazy" />
           </div>
-          <div class="col-md-4 text-center">
-            <h5>Folge uns auf Social Media</h5>
-            <div class="social-icons">
-              <a
-                href="https://www.facebook.com/knezholz"
-                class="text-light me-2"
-                ><i class="bi bi-facebook" style="font-size: 2.5rem"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/knezholz_gmbh/"
-                class="text-light me-2"
-                ><i class="bi bi-instagram" style="font-size: 2.5rem"></i
-              ></a>
+          <div class="carousel-item">
+            <img src="assets/img/gallery/tischplatte2.jpg" class="d-block w-100 carousel-img"
+              alt="Tischplatte & Stühle – Design 2" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/gallery/tischplatte3.jpg" class="d-block w-100 carousel-img"
+              alt="Tischplatte & Stühle – Design 3" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/gallery/tischplatte4.jpg" class="d-block w-100 carousel-img"
+              alt="Tischplatte & Stühle – Design 4" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/gallery/tischplatte5.jpg" class="d-block w-100 carousel-img"
+              alt="Tischplatte & Stühle – Design 5" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/gallery/tischplatte6.jpg" class="d-block w-100 carousel-img"
+              alt="Tischplatte & Stühle – Design 6" loading="lazy" />
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesigns" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Vorheriges</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDesigns" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Nächstes</span>
+        </button>
+      </div>
+
+      <p class="text-light small mt-2 mb-0 opacity-75 text-center">
+        Tipp: Mit Pfeilen oder Punkten navigieren.
+      </p>
+    </div>
+  </section>
+
+  <!-- Video – Tischplatten & Stühle -->
+  <section class="wrapper py-5" id="video-designs">
+    <div class="container">
+      <header class="text-center mb-5">
+        <h2 class="mb-2">Unsere Tischplatten in Aktion</h2>
+        <p class="mb-0">Ein authentischer Einblick in Material, Struktur & Verarbeitung</p>
+      </header>
+
+      <div class="rounded-4 overflow-hidden border border-white border-opacity-10 mx-auto" style="max-width: 1100px;">
+        <video class="w-100 video-cover" controls preload="metadata" poster="assets/img/gallery/tischplatte1.jpg">
+          <source src="assets/img/video/Tischplatte_klein.mp4" type="video/mp4" />
+          Ihr Browser unterstützt das Video-Tag nicht.
+        </video>
+      </div>
+
+      <p class="text-center text-light small mt-2 opacity-75">
+        Echtes Altholz – echte Handarbeit – echte Ergebnisse.
+      </p>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="leistungen" class="wrapper py-5">
+    <div class="container">
+      <header class="text-center mb-5">
+        <h2 class="mb-2">Altholz & Holzbearbeitung</h2>
+        <p class="mb-0">Bearbeitung nach Kundenwunsch – präzise, sauber, zuverlässig.</p>
+      </header>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/services/entnageln.jpg" class="card-img-top service-img" alt="Entnageln"
+              loading="lazy" />
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Entnageln</h3>
+              <p class="card-text mb-0">
+                Wir entfernen Nägel und Metallreste, damit das Holz sauber weiterverarbeitet werden kann.
+              </p>
             </div>
           </div>
-          <div class="col-md-4 text-center">
-            <h5>Rechtliches</h5>
-            <a
-              href="impressum.html"
-              class="text-light d-block"
-              rel="noopener noreferrer"
-              >Impressum</a
-            >
-            <a
-              href="datenschutzerklaerung.html"
-              class="text-light d-block"
-              rel="noopener noreferrer"
-              >Datenschutz</a
-            >
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/services/buersten.jpg" class="card-img-top service-img" alt="Bürsten" loading="lazy" />
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Bürsten</h3>
+              <p class="card-text mb-0">
+                Struktur und Charakter sichtbar machen – für ein hochwertiges Finish.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/products/schnittholz/schnittholz.jpg" class="card-img-top service-img"
+              alt="Formschnitt" loading="lazy" />
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Formschnitt</h3>
+              <p class="card-text mb-0">
+                Exakte Formgebung nach Maß – passend zu Ihrem Projekt und Einsatzbereich.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/services/besaeumen.jpg" class="card-img-top service-img" alt="Besäumen"
+              loading="lazy" />
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Besäumen</h3>
+              <p class="card-text mb-0">
+                Saubere Kanten und definierte Maße – für ein professionelles Ergebnis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/services/hobeln.webp" class="card-img-top service-img" alt="Hobeln" loading="lazy" />
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Hobeln</h3>
+              <p class="card-text mb-0">
+                Glatte Oberflächen mit gleichmäßiger Struktur – funktional und optisch stark.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/services/trocknen.webp" class="card-img-top service-img" alt="Trocknen"
+              loading="lazy" />
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5 card-title">Trocknen</h3>
+              <p class="card-text mb-0">
+                Optimale Holzfeuchte für Stabilität – reduziert Verzug und Rissbildung.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About / CTA -->
+  <section id="cta" class="wrapper">
+    <div class="container">
+      <div class="inner text-center">
+
+        <h2 class="mb-4">Über KnezHolz GmbH & Altholz</h2>
+
+        <div class="cta-divider mb-4"></div>
+
+        <p>
+          <strong>Unsere Geschichte:</strong><br />
+          KnezHolz zählt zu den führenden Altholzlieferanten in Österreich und der EU.
+          Unser Fokus liegt auf einem verantwortungsvollen Umgang mit der wertvollen
+          Ressource Holz – nachhaltig, bewusst und zukunftsorientiert.
+        </p>
+
+        <p>
+          Diese Philosophie schätzen sowohl unsere Kunden als auch unsere Partner.
+          Langfristige Zusammenarbeit, faire Prozesse und höchste Materialqualität
+          stehen für uns an erster Stelle.
+        </p>
+
+        <p class="mb-0">
+          Nachhaltigkeit und Klimaschutz sind kein Trend, sondern unser Anspruch.
+          Wir setzen konsequent auf Qualität statt Masse –
+          <strong>Altholz for the Future.</strong>
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="wrapper py-5">
+    <div class="container">
+      <header class="text-center mb-5">
+        <h2>Unser starkes Team</h2>
+        <p>
+          Lernen Sie das Team hinter KnezHolz kennen – Experten mit
+          Leidenschaft für Holz und Nachhaltigkeit.
+        </p>
+      </header>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- Team Member 1 -->
+        <div class="col">
+          <div class="card h-100 text-center bg-dark text-light border-0">
+            <img src="../assets/img/profile/Knezholz_Mio.jpg" alt="Miodrag Knezevic – CEO KnezHolz"
+              class="rounded-circle mx-auto mt-4" style="
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border: 2px solid #fff;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+            " loading="lazy" />
+
+            <div class="card-body">
+              <blockquote class="blockquote mb-4">
+                <p class="small opacity-75">
+                  Als ausgebildeter Techniker mit langjähriger Erfahrung in der
+                  Baubranche ist er der erste Ansprechpartner für Baustoffe
+                  und verantwortlich für den operativen Bereich.
+                </p>
+              </blockquote>
+              <h5 class="card-title mb-1">Miodrag Knezevic</h5>
+              <p class="card-text text-gold">CEO · KnezHolz</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="col">
+          <div class="card h-100 text-center bg-dark text-light border-0">
+            <img src="../assets/img/profile/Knezholz_Silvija.jpg" alt="Silvija Knezevic – Management KnezHolz"
+              class="rounded-circle mx-auto mt-4" style="
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border: 2px solid #fff;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+            " loading="lazy" />
+
+            <div class="card-body">
+              <blockquote class="blockquote mb-4">
+                <p class="small opacity-75">
+                  Bringt umfassendes kaufmännisches Know-how mit und ist
+                  für Strategie, Management und Planung verantwortlich.
+                </p>
+              </blockquote>
+              <h5 class="card-title mb-1">Silvija Knezevic, MA</h5>
+              <p class="card-text text-gold">Management · KnezHolz</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="col">
+          <div class="card h-100 text-center bg-dark text-light border-0">
+            <img src="../assets/img/profile/Knezholz-081.jpg" alt="Emma – Security KnezHolz"
+              class="rounded-circle mx-auto mt-4" style="
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border: 2px solid #fff;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+            " loading="lazy" />
+
+            <div class="card-body">
+              <blockquote class="blockquote mb-4">
+                <p class="small opacity-75">
+                  Unsere Sicherheitsbeauftragte mit einem ausgezeichneten Gespür
+                  für Ordnung und Aufmerksamkeit.
+                </p>
+              </blockquote>
+              <h5 class="card-title mb-1">Emma</h5>
+              <p class="card-text text-gold">Security · KnezHolz</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt & Standort -->
+  <section id="contact" class="wrapper py-5">
+    <div class="container">
+      <header class="text-center mb-5">
+        <h2 class="mb-2">Kontakt & Standort</h2>
+        <p class="mb-0">Senden Sie uns Ihre Anfrage – wir melden uns zeitnah zurück.</p>
+      </header>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Form -->
+        <div class="col-lg-6">
+          <div class="p-4 rounded-4 border border-white border-opacity-10" style="background: rgba(0,0,0,0.7);">
+            <form onsubmit="sendMail(event)">
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label for="name" class="form-label text-light">Name *</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Dein Name" required />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label text-light">E-Mail *</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
+                      required />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone" class="form-label text-light">Telefon (optional)</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="+43 …" />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="requestType" class="form-label text-light">Anfrage *</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-ui-checks"></i></span>
+                    <select class="form-select" id="requestType" name="requestType" required>
+                      <option value="" selected disabled>Bitte auswählen…</option>
+                      <option value="Preis/Angebot">Preis / Angebot</option>
+                      <option value="Verfügbarkeit">Verfügbarkeit</option>
+                      <option value="Bearbeitung">Bearbeitung / Zuschnitt</option>
+                      <option value="Lieferung/Abholung">Lieferung / Abholung</option>
+                      <option value="Allgemein">Allgemeine Anfrage</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="product" class="form-label text-light">Produkt / Sortiment</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-box-seam"></i></span>
+                    <select class="form-select" id="product" name="product">
+                      <option value="" selected>Bitte auswählen (optional)…</option>
+                      <option value="Kantholz / Balken / Sparren">Kantholz / Balken / Sparren</option>
+                      <option value="Schnittholz">Schnittholz</option>
+                      <option value="3-Schicht Platten">3-Schicht Platten</option>
+                      <option value="Handgehackte Bretter">Handgehackte Bretter</option>
+                      <option value="Sonnenverbrannte Verschlagbretter">Sonnenverbrannte Verschlagbretter</option>
+                      <option value="Blockwandbohle">Blockwandbohle</option>
+                      <option value="Sonstiges">Sonstiges</option>
+                    </select>
+                  </div>
+                  <div class="form-text text-light opacity-75">
+                    Tipp: Wenn du Maße hast (Länge/Breite/Stärke), schreib’s unten in die Nachricht.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label text-light">Nachricht *</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
+                    <textarea class="form-control" id="message" name="message" rows="5"
+                      placeholder="Deine Nachricht (z.B. gewünschte Maße, Menge, Holzart…)" required></textarea>
+                  </div>
+                </div>
+
+                <!-- Honeypot -->
+                <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off" />
+
+                <div class="col-12 d-grid">
+                  <button type="submit" class="btn btn-primary" id="submitBtn">
+                    <i class="bi bi-send-fill me-1"></i> Senden
+                  </button>
+                </div>
+
+                <p class="mb-0 small text-light opacity-75">
+                  * Pflichtfelder. Ihre Daten werden nur zur Bearbeitung der Anfrage verwendet.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="col-lg-6">
+          <div class="h-100 rounded-4 overflow-hidden border border-white border-opacity-10">
+            <iframe title="KnezHolz Standort – Kleinfeld 12, 6341 Ebbs"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5350.994208992127!2d12.20823382646409!3d47.620802302479326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477639a4297235df%3A0x637445b6f6650b19!2sKleinfeld%2012%2C%206341%20Ebbs!5e1!3m2!1sde!2sat!4v1728005401903!5m2!1sde!2sat"
+              style="border: 0; width: 100%; height: 100%; min-height: 520px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="text-center">
+            <a class="btn btn-outline-light"
+              href="https://www.google.com/maps/search/?api=1&query=Kleinfeld+12a,+6334+Ebbs" target="_blank"
+              rel="noopener noreferrer">
+              <i class="bi bi-geo-alt-fill me-1"></i> In Google Maps öffnen
+            </a>
           </div>
         </div>
       </div>
-      <div class="text-center mt-3">
-        <p class="mb-0">
-          Copyright © 2024 KnezHolz GmbH - Alle Rechte vorbehalten.
-        </p>
-        <p class="mb-0">
-          made by <a href="https://www.dimit.cc/" class="text-light">dimit</a>
-        </p>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+<!-- Cookie Banner -->
+<div id="cookie-banner" class="cookie-banner fixed-bottom bg-dark text-light p-3" style="display:none">
+  <div class="container">
+    <p class="mb-2">
+      Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern.
+      Details in unserer
+      <a href="/pages/datenschutz.html" class="text-light" target="_blank" rel="noopener noreferrer">
+        Datenschutzerklärung
+      </a>.
+    </p>
+
+    <div class="d-grid gap-2" style="max-width: 260px; margin: auto">
+      <button id="accept-cookies" class="btn btn-success btn-sm">
+        Akzeptieren
+      </button>
+      <button id="decline-cookies" class="btn btn-outline-light btn-sm">
+        Ablehnen
+      </button>
+
+      <!-- optional: später ändern -->
+      <button id="cookie-reset" class="btn btn-link btn-sm text-light p-0 mt-1" type="button">
+        Entscheidung ändern
+      </button>
+    </div>
+  </div>
+</div>
+
+  <!-- footer -->
+  <div data-include="partials/footer.html"></div>
+
+
+  <!-- Bootstrap JS Bundle (inkl. Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Dein JS -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+
 </html>
