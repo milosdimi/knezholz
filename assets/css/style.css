@@ -1,10 +1,11 @@
-/* =========================
-   Base / Background
-========================= */
+/* =========================================================
+   Root / Base
+========================================================= */
 
 :root {
   --gold: #fff7cd;
-  --gold-2: #fff3cd;
+  --gold-soft: #fff3cd;
+  --gold-hover: #ffe7a8;
   --dark-glass: rgba(0, 0, 0, 0.7);
   --shadow-text: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
@@ -13,25 +14,43 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  color: #fff;
+}
+
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
   background: url("../img/hero/startwood.jpg") center / cover no-repeat fixed;
-  opacity: 1;
 }
 
-/* Optional: bessere Lesbarkeit auf allen Sections */
+/* Wrapper */
 .wrapper {
   position: relative;
 }
 
-/* =========================
-   Navbar / Header (modern)
-========================= */
+/* =========================================================
+   Typography – globale Gold-Regeln
+========================================================= */
+
+section header h1,
+section header h2 {
+  color: var(--gold);
+  text-shadow: var(--shadow-text);
+}
+
+section header p {
+  color: rgba(255, 247, 205, 0.9);
+}
+
+/* =========================================================
+   Navbar / Header
+========================================================= */
 
 header .navbar {
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -41,38 +60,50 @@ header .navbar-brand img {
 }
 
 header .nav-link {
-  opacity: 0.9;
+  color: #fff;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
 }
 
-header .nav-link:hover,
-header .nav-link:focus {
+header .nav-link:hover {
   opacity: 1;
 }
 
-/* =========================
+/* Gold CTA Button */
+.btn-knez-gold {
+  background: linear-gradient(135deg, var(--gold), var(--gold-hover));
+  color: #000;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-knez-gold:hover {
+  background: linear-gradient(135deg, var(--gold-hover), var(--gold));
+  color: #000;
+}
+
+/* =========================================================
    Hero / Banner Video
-========================= */
+========================================================= */
 
 #banner {
   position: relative;
-  overflow: hidden;
   height: 65vh;
   min-height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
 }
 
-/* dunkles Overlay für bessere Lesbarkeit */
 #banner::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 1;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.55),
+  background: linear-gradient(rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.25));
+  z-index: 1;
 }
 
 #banner .inner {
@@ -88,24 +119,6 @@ header .nav-link:focus {
   text-shadow: var(--shadow-text);
 }
 
-#banner h1 {
-  font-size: clamp(2.2rem, 4vw, 4rem);
-  margin: 0;
-}
-
-#banner h2 {
-  font-size: clamp(1.4rem, 2.2vw, 2rem);
-  margin-bottom: 0.75rem;
-}
-
-#banner p {
-  font-size: clamp(1.05rem, 1.6vw, 1.5rem);
-  margin-top: 0.75rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #background-video {
   position: absolute;
   inset: 0;
@@ -113,222 +126,136 @@ header .nav-link:focus {
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.9;
 }
 
-/* KnezHolz gold button */
-.btn-knez-gold {
-  background-color: #fff7cd;
-  color: #000;
-  border: 1px solid rgba(255, 247, 205, 0.55);
-  font-weight: 600;
-}
-
-.btn-knez-gold:hover,
-.btn-knez-gold:focus {
-  background-color: #ffe7a8;
-  color: #000;
-  border-color: rgba(255, 231, 168, 0.8);
-}
-
-/* =========================
-   Cards (Bootstrap-friendly)
-========================= */
+/* =========================================================
+   Cards (Produkte / Leistungen / Team)
+========================================================= */
 
 .card {
   background-color: var(--dark-glass) !important;
-  color: white;
   border: none;
   border-radius: 16px;
   overflow: hidden;
+  color: #fff;
 }
 
-.card h5,
-.card p {
+.card h5 {
   color: var(--gold);
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
+.card p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 .card-img-top {
-  transition: transform 180ms ease;
+  transition: transform 0.2s ease;
 }
 
 .card-img-top:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
-/* Team-Karten: du nutzt blockquote, also hier schöner */
+/* Team Quotes */
 .card-body blockquote p {
   font-style: italic;
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* Achtung: Bei dir war card-text schwarz -> auf dunklem bg unlesbar */
-.card-text {
-  color: var(--gold);
-}
+/* =========================================================
+   Produktkarten (Index + Unterseiten)
+   -> Greift auf alle .card-link mit .card-media img
+========================================================= */
 
-.card-link {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card-link:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
-}
-
-.card-media img {
-  height: 220px;
+.card-link .card-media img {
   width: 100%;
+  height: 220px;
+  /* wie im Index */
   object-fit: cover;
+  display: block;
+  transition: transform 0.2s ease;
 }
 
+.card-link:hover .card-media img {
+  transform: scale(1.03);
+}
 
-/* =========================
-   CTA / About Section
-========================= */
+/* Sortiment (Startseite): Text goldiger wie vorher */
+#sortiment .card-title {
+  color: var(--gold);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
 
-/* CTA / About – Feinschliff */
+#sortiment .card-text {
+  color: var(--gold);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+#sortiment .card-body {
+  padding: 14px 14px 16px;
+}
+
+/* =========================================================
+   CTA / About Section (Parallax Style)
+========================================================= */
 
 #cta {
   position: relative;
   background:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../img/hero/altholzbg.jpg");
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-
+    url("../img/hero/altholzbg.jpg") center bottom / cover no-repeat fixed;
   padding: 180px 0;
   text-align: center;
 }
 
-
-#cta .inner {
-  backdrop-filter: blur(1.5px);
-}
-
 #cta h2 {
   color: var(--gold);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 #cta p {
-  color: rgba(255, 255, 255, 0.88);
   max-width: 900px;
-  margin: 0 auto 1.2rem;
-  font-size: 1.05rem;
+  margin: 0 auto;
   line-height: 1.8;
 }
 
-/* Goldene Linie */
-.cta-divider {
-  width: 80px;
-  height: 3px;
-  background: var(--gold);
-  margin: 0 auto;
-  border-radius: 2px;
-}
-
-
-/* =========================
-   Contact
-========================= */
-
-#contact .form-label {
-  font-weight: 600;
-}
-
-
-#contact h2 {
-  color: var(--gold);
-  text-shadow: var(--shadow-text);
-}
-
-#contact .btn {
-  background-color: var(--gold);
-  color: #000;
-  border: none;
-}
-
-#contact .btn:hover {
-  background-color: #ffe7a8;
-}
-
-.input-group-text {
-  background-color: var(--gold-2) !important;
-  color: #000;
-}
-
-/* dein Button war flex, ok – aber nur für primary buttons */
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn-primary i {
-  margin-right: 6px;
-}
-
-/* Leistungen: einheitliche Card-Bilder */
-.service-img {
-  height: 220px;
-  width: 100%;
-  object-fit: cover;
-}
-
-/* =========================
+/* =========================================================
    Carousel
-========================= */
+   WICHTIG: NICHT global auf .carousel-item gehen,
+   sonst verändert es auch Produktseiten & Modal!
+========================================================= */
 
-#carouselExample {
-  max-width: 100%;
-  margin: auto;
-}
-
-#carouselExample .carousel-item {
-  height: 400px;
-}
-
-#carouselExample img {
-  height: 100%;
-  object-fit: cover;
-}
-
+/* Nur Index-Galerie-Carousel (Tischplatte & Stühle) */
 .carousel-img {
-  height: clamp(260px, 45vh, 565px);
+  height: clamp(260px, 45vh, 520px);
   object-fit: cover;
+  display: block;
 }
 
-/* =========================
-   Video / Maps
-========================= */
-
-/* Video Section */
-.video-cover {
-  max-height: 520px;
-  object-fit: cover;
-  background: #000;
+/* Modal Galerie (immer contain lassen) */
+#productGalleryModal img {
+  object-fit: contain !important;
+  height: auto !important;
 }
 
-/* Optional: etwas weniger Höhe auf Mobile */
-@media (max-width: 768px) {
-  .video-cover {
-    max-height: 320px;
-  }
-}
+/* =========================================================
+   Video & Google Maps
+========================================================= */
 
-
-.video-container {
-  margin: 0 auto;
+.video-container video {
+  width: 100%;
+  border-radius: 16px;
 }
 
 .embed-responsive {
-  overflow: hidden;
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
+  overflow: hidden;
   border-radius: 16px;
 }
 
@@ -339,33 +266,84 @@ header .nav-link:focus {
   height: 100%;
 }
 
-/* =========================
-   Legal Pages (Impressum/Datenschutz)
-========================= */
+/* =========================================================
+   Contact
+========================================================= */
+
+#contact h2 {
+  color: var(--gold);
+  text-shadow: var(--shadow-text);
+}
+
+#contact .form-label {
+  font-weight: 600;
+}
+
+#contact .btn {
+  background-color: var(--gold);
+  color: #000;
+  border: none;
+}
+
+#contact .btn:hover {
+  background-color: var(--gold-hover);
+}
+
+.input-group-text {
+  background-color: var(--gold-soft);
+  color: #000;
+}
+
+/* =========================================================
+   Legal Pages (Impressum / Datenschutz)
+========================================================= */
 
 .transparent-bg {
   background-color: var(--dark-glass);
-  padding: 20px;
-  border-radius: 12px;
+  padding: 24px;
+  border-radius: 14px;
 }
 
 .transparent-bg h4,
-.transparent-bg h5,
-.transparent-bg p {
-  color: var(--gold-2);
+.transparent-bg h5 {
+  color: var(--gold);
 }
 
-.transparent-bg ul {
-  color: #b49a45;
+.transparent-bg p,
+.transparent-bg li {
+  color: rgba(255, 255, 255, 0.85);
 }
 
-/* =========================
-   Cookie Banner & Footer
-========================= */
+/* =========================================================
+   Footer & Cookie Banner
+========================================================= */
 
 .cookie-banner {
   z-index: 1000;
-  border-top: 1px solid rgba(255,255,255,0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Social Icons – FIX (kein _ mehr) */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  line-height: 1;
+}
+
+.social-icons i {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icons i:hover {
+  color: var(--gold);
+  transform: scale(1.1);
 }
 
 footer a {
@@ -373,10 +351,5 @@ footer a {
 }
 
 footer a:hover {
-  color: #ffcc00;
-}
-
-.social-icons i,
-.social-icons a {
-  font-size: 2.5rem !important;
+  color: var(--gold);
 }
