@@ -128,6 +128,63 @@ async function sendMail(event) {
   }
 }
 
+/* =========================
+   Scroll Reveal (Sortiment)
+========================= */
+function initSortimentReveal() {
+  const items = document.querySelectorAll("#sortiment .col");
+  if (!items.length) return;
+
+  // Fallback: wenn Browser keinen IntersectionObserver kann
+  if (!("IntersectionObserver" in window)) {
+    items.forEach((el) => el.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        obs.unobserve(entry.target); // nur 1x animieren
+      });
+    },
+    {
+      root: null,
+      threshold: 0.18,          // wann es auslöst
+      rootMargin: "0px 0px -10% 0px", // etwas früher triggern
+    }
+  );
+
+  items.forEach((el) => observer.observe(el));
+}
+/* =========================
+   Scroll Reveal (Reusable)
+========================= */
+function initScrollReveal() {
+  const items = document.querySelectorAll(".reveal-item");
+  if (!items.length) return;
+
+  if (!("IntersectionObserver" in window)) {
+    items.forEach((el) => el.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        obs.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.18, rootMargin: "0px 0px -10% 0px" }
+  );
+
+  items.forEach((el) => observer.observe(el));
+}
+
+
 
 /* =========================
    Boot
@@ -135,4 +192,8 @@ async function sendMail(event) {
 document.addEventListener("DOMContentLoaded", async () => {
   await includeHTML();     // Header/Footer zuerst laden
   initCookieBanner();      // dann Cookie Banner initialisieren
+  initSortimentReveal();
+  initScrollReveal();
 });
+
+
