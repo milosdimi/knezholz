@@ -571,3 +571,49 @@ footer a:hover {
   background: rgba(0, 0, 0, 0.85);
   transform: translateY(-2px);
 }
+
+/* =========================================================
+   WhatsApp Floating Button (Premium)
+========================================================= */
+
+#whatsappBtn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 52px;
+  height: 52px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.6rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 0.25s ease, transform 0.25s ease, color 0.2s ease;
+  z-index: 999;
+}
+
+#whatsappBtn.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#whatsappBtn:hover {
+  color: var(--gold);
+  transform: translateY(-4px);
+}
+
+/* Mobile etwas größer */
+@media (max-width: 768px) {
+  #whatsappBtn {
+    width: 56px;
+    height: 56px;
+    font-size: 1.75rem;
+  }
+}

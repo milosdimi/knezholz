@@ -203,6 +203,23 @@ function initScrollTopButton() {
   });
 }
 
+function initWhatsAppButton() {
+  const waBtn = document.getElementById("whatsappBtn");
+  if (!waBtn) return;
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      waBtn.classList.add("is-visible");
+    } else {
+      waBtn.classList.remove("is-visible");
+    }
+  };
+
+  window.addEventListener("scroll", toggleVisibility);
+  toggleVisibility();
+}
+
+
 /* =========================
    Boot
 ========================= */
@@ -212,6 +229,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initSortimentReveal();
   initScrollReveal();
   initScrollTopButton();
+  initWhatsAppButton();
 });
 
 
