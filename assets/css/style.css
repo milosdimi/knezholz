@@ -271,6 +271,12 @@ header .nav-link:hover {
   transform: translateX(0);
 }
 
+.reveal-item.is-visible {
+  transition-delay: 60ms;
+}
+
+
+
 /* Accessibility: wenn Nutzer “Reduce Motion” aktiv hat */
 @media (prefers-reduced-motion: reduce) {
   #sortiment .col {
