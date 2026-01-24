@@ -183,8 +183,25 @@ function initScrollReveal() {
 
   items.forEach((el) => observer.observe(el));
 }
+/* =========================
+   Scroll To Top Button
+========================= */
+function initScrollTopButton() {
+  const btn = document.getElementById("scrollTopBtn");
+  if (!btn) return; // Button nicht vorhanden? Kein Problem.
 
+  const toggle = () => {
+    if (window.scrollY > 500) btn.classList.add("is-visible");
+    else btn.classList.remove("is-visible");
+  };
 
+  window.addEventListener("scroll", toggle, { passive: true });
+  toggle(); // initialer Zustand
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
 
 /* =========================
    Boot
@@ -194,6 +211,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initCookieBanner();      // dann Cookie Banner initialisieren
   initSortimentReveal();
   initScrollReveal();
+  initScrollTopButton();
 });
 
 
